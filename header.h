@@ -3,7 +3,8 @@
 
 void title();
 void mainMenu();
-void readFromFile();
+void readFromFileEncrypt();
+void readFromFileDecrypt();
 
 
 

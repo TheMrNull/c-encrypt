@@ -35,9 +35,10 @@ void mainMenu(){
 
   switch (option) {
     case 1:
-      readFromFile();
+      readFromFileEncrypt();
       break;
     case 2:
+      readFromFileDecrypt();
       break;
     case 3:
       break;
