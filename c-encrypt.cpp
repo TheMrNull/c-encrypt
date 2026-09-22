@@ -35,7 +35,7 @@ void readFromFileEncrypt(){
   char c;
 
   while(fileIn.get(c)){
-    char processed = c ^ key[keyIndex&keyLength];
+    char processed = c ^ key[keyIndex % keyLength];  // core logic for encryption with XOR
     fileOut.put(processed);
     keyIndex++;
   }
@@ -57,14 +57,15 @@ void readFromFileDecrypt(){
 
   cout << "Please input file to open: ";
   cin >> inFilePath;
-  string outFilePath = inFilePath.erase(inFilePath.length()- enc.length());
   ifstream fileIn(inFilePath, ios::binary);
-  ofstream fileOut(outFilePath, ios::binary);
 
   if(!fileIn.is_open()){
     cerr << "An error occured while opening " << inFilePath << endl;
     return;
   }
+
+  string outFilePath = inFilePath.erase(inFilePath.length()- enc.length());
+  ofstream fileOut(outFilePath, ios::binary);
   if(!fileOut.is_open()){
     cerr << "An error occured while opening " << outFilePath << endl;
     return;
@@ -79,7 +80,7 @@ void readFromFileDecrypt(){
   char c;
 
   while(fileIn.get(c)){
-    char processed = c ^ key[keyIndex&keyLength];
+    char processed = c ^ key[keyIndex % keyLength];
     fileOut.put(processed);
     keyIndex++;
   }
