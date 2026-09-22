@@ -5,6 +5,7 @@ void title();
 void mainMenu();
 void readFromFileEncrypt();
 void readFromFileDecrypt();
+void usage();
 
 
 

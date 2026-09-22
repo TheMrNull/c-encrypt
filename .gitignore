@@ -3,3 +3,4 @@ test.txt
 a.out
 *.enc
 header.h.pch
+build/
