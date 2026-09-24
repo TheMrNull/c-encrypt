@@ -31,4 +31,4 @@ AGAIN I DO NOT TAKE ANY RESPONSIBILITY IF YOU ENCRYPT THE WRONG FILE, EVEN IF IT
 SHOULD WORK AS INTENDED AND DO NOT FORGET THE ENCRYPTION KEYS.  
 The main suggestion is to use this program to tinker or make improvements.
 
-You can open an Issue or contact me on Instagram @modo_06
+Do not open an issue or contact me on Instagram @modo_06, it'll take me 69 days before I answer
