@@ -99,6 +99,6 @@ void usage(){
   printf("Usage is simple, just choose a mode when booting the program and follow the instructions.\n! PLEASE REMEMBER YOUR ENCRYPTION KEYS !\n");
   printf("Supported formats:\n- .txt\n- .png\n- .PDF\nOthers may be supported but I have not tried.\n");
   printf("The file passed must not contain spaces otherwise fstream won't be able to open it.\nIf no full path is given the file is assumed to be in the same directory as the program.");
-  printf("Note that this is just a side project, if you choose to encrypt important documents that's on you mate!\n");
+  printf("\nNote that this is just a side project, if you choose to encrypt important documents that's on you mate!\n");
   printf("\n| Instagram: @modo_06 | GitHub: TheMrNull |\n");
 }
